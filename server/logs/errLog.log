@@ -1,0 +1,61 @@
+2024:01:06	16:41:44	78668dcb-74d8-4079-b1b2-1ad9bfa58e11	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/course/get-courses	http://localhost:3000
+2024:01:06	16:52:11	8f8cdd80-3631-49df-9ea6-0b7782b6f18c	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/Categories	http://localhost:3000
+2024:01:06	16:53:33	5b5ecca8-c3a3-4c58-b9d8-7b4bbd959fec	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3000
+2024:01:06	22:08:55	299bd7f8-d3f1-48bb-89ee-4c75ed2e26f2	MongoServerSelectionError: connection <monitor> to 13.244.36.199:27017 timed out	GET	/api/v1/layout/get-layout/Banner	http://localhost:3000
+2024:01:06	22:09:38	30c5803d-1fad-4465-af1f-43b2cc96ea1b	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/Banner	http://localhost:3000
+2024:01:06	22:10:13	cfebe6a4-8f44-4803-9023-74a29003b735	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/notification/get-notification	http://localhost:3000
+2024:01:06	22:10:13	9d61f541-5f61-4c55-92f4-872e16eb2733	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3000
+2024:01:07	21:33:00	ed593ac7-e882-4513-96e4-fd8b6911ce81	Error: Not allowed by CORS	GET	/api/v1/layout/get-layout/Banner	http://localhost:3001
+2024:01:07	21:33:00	a22c8715-aefc-4c84-9bc0-59a5dd2e8cee	Error: Not allowed by CORS	GET	/api/v1/course/get-courses	http://localhost:3001
+2024:01:07	21:33:00	5747eaa1-7968-46d1-8428-ae0d4e488114	Error: Not allowed by CORS	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3001
+2024:01:07	21:33:00	62b4718a-b63a-42a8-9c29-aa9e2eca46d6	Error: Not allowed by CORS	GET	/api/v1/refresh	http://localhost:3001
+2024:01:07	21:33:08	80382472-e3e8-43f2-bb8b-b1142574ead8	Error: Not allowed by CORS	GET	/api/v1/layout/get-layout/Banner	http://localhost:3001
+2024:01:07	21:33:08	f8dcac48-26b5-41bf-ab2a-263cf1bcfe68	Error: Not allowed by CORS	GET	/api/v1/course/get-courses	http://localhost:3001
+2024:01:07	21:33:09	3c3220f1-2017-4988-be2b-ac270ace6e2f	Error: Not allowed by CORS	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3001
+2024:01:07	21:33:09	53dc8de7-127e-4a91-920d-b38aca126524	Error: Not allowed by CORS	GET	/api/v1/refresh	http://localhost:3001
+2024:01:17	20:25:02	296a8d9a-27bb-423b-9108-486ae2698d99	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:17	21:22:11	dc73b6c7-f883-499e-b085-6989edd1bc7d	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:18	16:49:40	d86e3c03-f01e-400c-8d12-31d1ea3737cc	CastError: Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Course"	PATCH	/api/v1/course/edit-course/[object%20Object]	http://localhost:3000
+2024:01:18	17:12:19	f0a310b4-26f4-489d-8ba1-42d2a1635280	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:18	17:12:35	ba4e395b-4f81-41b3-b402-8ce832b3ff07	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	09:42:11	eb3d12be-f621-4051-8858-e6a515787328	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	10:01:47	fd394bb1-9563-4af0-b7cd-5bbf2e86ca0a	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	10:02:27	2a9cc9b7-c74f-49c4-a024-b3c9de73937b	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	10:02:48	4161b71a-719a-403d-8a58-56285924861d	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	10:03:25	696fc2f4-c42c-4c16-9c5f-8504e949e494	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:16:27	b0d2e950-ce5b-4931-8329-4b5edfe5ee79	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:18:50	1b9cfb68-d24c-4e50-b4c7-61489f4816e6	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:18:58	4133f0dd-ee4a-4126-bc2a-15d543e7df4f	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:20:32	7b0a3f71-0b5d-46a2-8af3-785d06517adb	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:20:50	67a52b98-8da4-4e78-a1b0-3fdc2f4ed6c3	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:23:27	a467a24d-ff03-4dca-8cf6-764813240dd5	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:24:32	b8e4fcd7-f1bf-4404-af26-81972dd26729	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:24:42	56dec9b4-b90f-467b-8ea6-c4bc9375f9f1	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:24:56	d38b95fb-1164-4b78-aaee-20e609dab15f	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:25:13	4d85b23f-4e32-4e0e-8020-c56297ecf9fe	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:26:19	53ba3d8b-d325-44f1-ac1c-6a2a3e1e19cd	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:19	17:30:08	73e661e3-0035-423c-b31d-d3a433653c11	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-01.kd1l5gy.mongodb.net	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:19	21:38:57	a0d78538-b619-4c8b-bfad-b8082b31a04e	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/analytics/get-user-analytics	http://localhost:3000
+2024:01:19	21:38:57	c4fc2de8-be87-4a06-915e-cb58de746645	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/analytics/get-orders-analytics	http://localhost:3000
+2024:01:20	10:19:21	2c7fc1a4-7df5-47ab-b54a-f7e04abe9996	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-01.kd1l5gy.mongodb.net	GET	/api/v1/notification/get-notification	http://localhost:3000
+2024:01:20	10:19:21	723db972-b1d9-49a4-8db8-ac933e4c2af7	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-01.kd1l5gy.mongodb.net	GET	/api/v1/	http://localhost:3000
+2024:01:21	21:36:30	3a0c1b1c-d635-4679-acc9-1d4ce50b3997	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:21	21:36:30	6ec77000-ff58-43e6-a9bf-0f4b4b804d36	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/Banner	http://localhost:3000
+2024:01:21	21:36:42	ba33f6f7-890c-48e1-9dee-ae702eba2d48	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:21	21:37:00	90e41759-7f3b-4bb6-9613-72505345eace	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/course/get-courses	http://localhost:3000
+2024:01:21	21:37:00	1578cbbc-46ab-4516-ba92-d14a04b88c66	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3000
+2024:01:22	10:01:36	034aeb34-7477-4acb-ad27-4738ca2c68ac	MongoNetworkError: connect ETIMEDOUT 13.245.122.214:27017	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3000
+2024:01:22	17:27:44	3ce9d43d-b9d0-48ef-9f97-ab20d2293967	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:22	17:28:00	84403cbf-da02-4ebb-8f26-08660bb5a913	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:22	17:28:13	819ef6a6-4669-4b7f-88a7-ed99b478adc1	MongoServerSelectionError: connect ETIMEDOUT 13.244.36.199:27017	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:22	17:28:21	60bac1f4-c2d6-4cb2-a9ae-8e4727c80efb	MongoServerSelectionError: connect ETIMEDOUT 13.244.36.199:27017	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:22	17:28:52	4fbdf079-9692-4610-b968-64c2c233e4ff	MongoServerSelectionError: connect ETIMEDOUT 13.244.36.199:27017	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:22	17:29:11	7a756e2c-8389-4d6f-975d-78adf4e33a30	MongoServerSelectionError: connect ETIMEDOUT 13.244.36.199:27017	POST	/api/v1/social-auth	http://localhost:3000
+2024:01:23	06:41:58	6e6c1e64-3c69-4c83-a42b-dcabb1611bf8	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:23	06:48:07	874ea3d0-cf63-4bef-8edc-d2d721876c79	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:23	06:55:01	1bf3c17b-778c-46b9-8fb3-d4b9c392fe5f	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:23	06:58:51	d2b10faa-290d-43c3-ad14-4a3048f8c480	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:23	06:59:53	e9bf3d74-f26b-4ceb-9cd9-c4c5bc57c354	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:23	07:16:58	b9d36cee-1b09-4b23-a3dc-ea1dd84fbbcc	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
+2024:01:23	08:05:45	876749ca-9272-45c3-8f9f-f2d330b405c8	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/notification/get-notification	http://localhost:3000
+2024:01:23	08:05:45	3abfbeda-ff0e-4afe-a291-cee151046e16	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/Categories	http://localhost:3000
