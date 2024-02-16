@@ -1,3 +1,5 @@
-const allowOrigins = ["https://eclass-sand.vercel.app"];
+const allowOrigins = [
+    "https://eclass-git-main-abdulrg01.vercel.app"
+];
 
 module.exports = allowOrigins;
