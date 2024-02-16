@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "http://localhost:9000/api/v1/",
+    baseUrl: "https://eclass-erbc.onrender.com",
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
