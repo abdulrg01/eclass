@@ -1,3 +1,3 @@
-const allowOrigins = ["http://localhost:3000"];
+const allowOrigins = ["https://eclass-sand.vercel.app"];
 
 module.exports = allowOrigins;
