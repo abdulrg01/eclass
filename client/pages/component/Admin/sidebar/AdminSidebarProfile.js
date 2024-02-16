@@ -13,8 +13,6 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCurrentUser, setIsOpen } from "../../../../redux/auth/authSlice";
 import { HiHome } from "react-icons/hi";
-import useAuth from "../../../hook/useAuth";
-import DashboardHeader from "../../DashboardHeader";
 import { useSendLogoutMutation } from "../../../../redux/auth/authApi";
 import { useRouter } from "next/router";
 import { signOut, useSession } from "next-auth/react";
@@ -24,7 +22,6 @@ export default function AdminSidebarProfile() {
   const [sendLogout, { isSuccess }] = useSendLogoutMutation();
   const { data: session } = useSession();
   const pathname = usePathname();
-  const { name, role } = useAuth();
   const user = useSelector(selectCurrentUser);
   const dispatch = useDispatch();
   const router = useRouter();
@@ -77,14 +74,14 @@ export default function AdminSidebarProfile() {
                 isOpen ? "hidden" : ""
               } text-sm font-normal text-black dark:text-white mb-1`}
             >
-              {name}
+              {user && user?.name}
             </p>
             <p
               className={`${
                 isOpen ? "hidden" : ""
               } text-sm font-normal text-black dark:text-white`}
             >
-              -{role}
+              -{user && user?.role}
             </p>
           </Link>
 

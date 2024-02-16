@@ -52,7 +52,7 @@ export default function CourseData({
           What are the benefits for students in this course
         </label>
         <br />
-        {benefits.map((benefit, index) => (
+        {benefits?.map((benefit, index) => (
           <input
             type="text"
             key={index}
@@ -74,7 +74,7 @@ export default function CourseData({
           What are the prerequisites for starting this course
         </label>
         <br />
-        {prerequisites.map((prerequisite, index) => (
+        {prerequisites?.map((prerequisite, index) => (
           <input
             type="text"
             key={index}

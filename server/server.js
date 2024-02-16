@@ -13,7 +13,7 @@ const connectDB = require("./config/connectDB");
 const path = require("path");
 const { v2: cloudinary } = require("cloudinary");
 const initSocketServer = require("./socketServer");
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT;
 const server = http.createServer(app);
 
 console.log(process.env.NODE_ENV);

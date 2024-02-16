@@ -99,12 +99,12 @@ export default function DashboardWidgets({ open }) {
         <Loader />
       ) : (
         <div className="mt-[10px] min-h-screen">
-          <div className="grid grid-cols-[75%,25%] sm:grid-cols-1 sm:grid sm:p-3">
+          <div className="grid grid-cols-[65%,35%] mt-[-20px] ml-8">
             <div className="p-3">
               <UsersAnalytics isDashboard={true} />
             </div>
 
-            <div className="pt-[80px] pr-5">
+            <div className="pt-[120px] pr-5">
               <div className="w-full bg-gray-100 dark:bg-[#111C43] rounded-sm shadow">
                 <div className="flex items-center p-3 justify-between flex-wrap">
                   <div>

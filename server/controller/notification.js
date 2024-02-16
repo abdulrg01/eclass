@@ -14,38 +14,32 @@ const getNotification = async (req, res) => {
 
 // update notification  ___ only admin
 const updateNotification = async (req, res) => {
-  try {
-    const notification = await Notification.findById(req.params.id);
-    if (!notification) {
-      return res.status(400).json({ message: "No Notification found" });
-    }
+  const id = req.params.id;
+  if (!id) return res.status(400).json({ message: "ID required, 404" });
 
-    let notificationStatus = notification.status;
-
-    // Conditionally update notificationStatus to "read" if it is truthy
-    notificationStatus = notificationStatus ? "read" : notificationStatus;
-
-    // Update the status of the notification
-    notification.status = notificationStatus;
-
-    // Save the updated notification
-    await notification.save();
-
-    // Retrieve all notifications sorted by createdAt
-    const notifications = await Notification.find()
-      .sort({ createdAt: -1 })
-      .lean();
-
-    res.status(200).json({
-      success: true,
-      notifications,
-    });
-  } catch (error) {
-    console.error("Error updating notification:", error);
-    res.status(500).json({ message: "Internal Server Error" });
+  const notification = await Notification.findById(id).exec();
+  if (!notification) {
+    return res.status(400).json({ message: "No Notification found" });
   }
-};
 
+  let notificationStatus = notification.status;
+
+  notificationStatus =
+    notificationStatus === "unread" ? "read" : notificationStatus;
+
+  notification.status = notificationStatus;
+
+  await notification.save();
+
+  const notifications = await Notification.find()
+    .sort({ createdAt: -1 })
+    .lean();
+
+  res.status(200).json({
+    success: true,
+    notifications,
+  });
+};
 
 cron.schedule("0 0 0 * * *", async () => {
   const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);

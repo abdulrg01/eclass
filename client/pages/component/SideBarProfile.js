@@ -6,15 +6,16 @@ import { AiOutlineLogout } from "react-icons/ai";
 import { MdOutlineAdminPanelSettings } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { SiCoursera } from "react-icons/si";
-import useAuth from "../hook/useAuth";
 import { useSession, signOut } from "next-auth/react";
 import Loader from "./Loader";
+import { useSelector } from "react-redux";
+import { selectCurrentUser } from "@/redux/auth/authSlice";
 
 export default function SideBarProfile({ active, setActive, avatar }) {
   const [sendLogout, { isSuccess, isLoading }] = useSendLogoutMutation();
   const router = useRouter();
   const { data: session } = useSession();
-  const { isAdmin } = useAuth();
+  const user = useSelector(selectCurrentUser)
 
   useEffect(() => {
     if (isSuccess) router.replace("/");
@@ -70,7 +71,7 @@ export default function SideBarProfile({ active, setActive, avatar }) {
               Enroll Courses
             </h5>
           </div>
-          {isAdmin && (
+          {user && user?.role === "Admin" && (
             <Link
               href="/admin"
               className={`w-full flex items-center px-3 py-4 cursor-pointer ${

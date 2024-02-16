@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "https://api-3w7q.onrender.com/api/v1",
+    baseUrl: "http://localhost:9000/api/v1/",
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
@@ -26,7 +26,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
         console.log('sending refresh token')
 
         // send refresh token to get new access token 
-        const refreshResult = await baseQuery("https://api-3w7q.onrender.com/api/v1/refresh", api, extraOptions)
+        const refreshResult = await baseQuery("/refresh", api, extraOptions)
 
         if (refreshResult?.data) {
 
@@ -49,6 +49,5 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
 
 export const apiSlice = createApi({
     baseQuery: baseQueryWithReauth,
-    tagTypes: ["User"],
     endpoints: builder => ({})
 })

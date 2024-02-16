@@ -59,3 +59,18 @@
 2024:01:23	07:16:58	b9d36cee-1b09-4b23-a3dc-ea1dd84fbbcc	CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Course"	GET	/api/v1/course/get-course/undefined	http://localhost:3000
 2024:01:23	08:05:45	876749ca-9272-45c3-8f9f-f2d330b405c8	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/notification/get-notification	http://localhost:3000
 2024:01:23	08:05:45	3abfbeda-ff0e-4afe-a291-cee151046e16	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-metfmz5-shard-00-00.kd1l5gy.mongodb.net	GET	/api/v1/layout/get-layout/Categories	http://localhost:3000
+2024:02:16	14:11:30	c0b93f43-af28-4c3d-814e-7dc2964056c9	MongooseError: Operation `courses.find()` buffering timed out after 10000ms	GET	/api/v1/course/get-courses	http://localhost:3000
+2024:02:16	14:20:39	d97e6261-1a7d-4f72-abf4-42ce598aa0ae	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/analytics/get-orders-analytics	http://localhost:3000
+2024:02:16	14:20:39	9728c63f-6a01-4438-96fd-e7f05ac12c19	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/analytics/get-user-analytics	http://localhost:3000
+2024:02:16	14:20:39	b653e1ed-43a8-4da7-b075-67596c5cc199	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/notification/get-notification	http://localhost:3000
+2024:02:16	14:25:43	66931dcb-ef86-45ce-99f2-201a85c79064	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/course/get-courses	http://localhost:3000
+2024:02:16	14:43:13	5c00dca8-446b-4e74-aa21-9101e7fddaad	MongoNetworkError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/layout/get-layout/Banner	http://localhost:3000
+2024:02:16	17:36:12	f8d1bd3a-6844-4716-a7fa-b9b77c228407	MongoServerSelectionError: connect ETIMEDOUT 13.244.36.199:27017	GET	/api/v1/notification/get-notification	http://localhost:3000
+2024:02:16	17:36:12	198a2db6-688a-4e44-95a7-bf51c9134cc0	MongoServerSelectionError: connect ETIMEDOUT 13.244.36.199:27017	GET	/api/v1/analytics/get-courses-analytics	http://localhost:3000
+2024:02:16	17:39:06	9a51c808-419d-47a8-bb40-a6b1f6ebe022	MongoNetworkError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3000
+2024:02:16	17:39:36	66d3c934-adaf-4893-8374-ea50288cf336	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/notification/get-notification	http://localhost:3000
+2024:02:16	17:39:36	44b9acd7-0128-4c9d-86ba-0166d7d2b089	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/analytics/get-user-analytics	http://localhost:3000
+2024:02:16	17:39:36	5d72ff6d-902c-494b-ab49-0b861b7b1611	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/analytics/get-courses-analytics	http://localhost:3000
+2024:02:16	17:39:36	52a2a2c7-7365-4b99-96a9-63580d397a3d	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/analytics/get-orders-analytics	http://localhost:3000
+2024:02:16	18:29:11	6f42aa5d-5490-4971-9ee4-711b7ab93ea5	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/course/get-courses	http://localhost:3000
+2024:02:16	18:29:11	b7e69f21-9998-4155-93b8-3fcdba42a881	MongoServerSelectionError: connect ETIMEDOUT 13.245.106.177:27017	GET	/api/v1/layout/get-layout/Banner	http://localhost:3000

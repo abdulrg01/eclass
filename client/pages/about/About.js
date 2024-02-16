@@ -29,7 +29,7 @@ export default function About() {
         <br />
         <br />
         <br />
-        <span className=" font-Cursive text-[22px]">Rg family</span>
+        <span className=" font-Cursive text-[22px]">Abu Siyama</span>
         <h5 className="text-[14px]">Founder and CEO of RG ELearning</h5>
       </div>
     </div>
