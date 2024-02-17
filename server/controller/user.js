@@ -1,10 +1,8 @@
 const sendMail = require("../config/sendMail");
 const User = require("../models/user");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
 const path = require("path");
 const ejs = require("ejs");
-const client = require("../config/redis");
 const cloudinary = require("cloudinary");
 
 //REGISTER A USER

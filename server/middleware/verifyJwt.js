@@ -1,4 +1,3 @@
-const client = require("../config/redis")
 const jwt = require('jsonwebtoken')
 
 const verifyJwt = async(req, res, next) => {
