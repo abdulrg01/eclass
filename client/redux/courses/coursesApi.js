@@ -29,7 +29,7 @@ const courseApi = apiSlice.injectEndpoints({
     }),
     getCourseContent: builder.query({
       query: (id) => ({
-        url: `course/get-course-content/${id}`,
+        url: `/course/get-course-content/${id}`,
         method: "GET",
       }),
     }),
@@ -63,7 +63,7 @@ const courseApi = apiSlice.injectEndpoints({
     }),
     addReplay: builder.mutation({
       query: ({ comment, id, reviewId }) => ({
-        url: "course/add-replay",
+        url: "/course/add-replay",
         method: "PATCH",
         body: { comment, id, reviewId },
       }),
