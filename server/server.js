@@ -36,12 +36,12 @@ app.use(cookieParser());
 
 app.use("/", e.static(path.join(__dirname, "public")));
 app.use("/", require("./routes/root"));
-app.use("/api/v1/users/", require("./routes/user"));
-app.use("/api/v1/course", require("./routes/course"));
-app.use("/api/v1/order", require("./routes/order"));
-app.use("/api/v1/notification", require("./routes/notification"));
-app.use("/api/v1/analytics", require("./routes/analytics"));
-app.use("/api/v1/layout", require("./routes/layout"));
+app.use("/users", require("./routes/user"));
+app.use("/course", require("./routes/course"));
+app.use("/order", require("./routes/order"));
+app.use("/notification", require("./routes/notification"));
+app.use("/analytics", require("./routes/analytics"));
+app.use("/layout", require("./routes/layout"));
 
 app.all("*", (req, res) => {
   res.status(400);

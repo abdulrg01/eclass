@@ -9969,3 +9969,4 @@
 2024:02:16	21:09:14	3fb13ccf-427d-40e8-9ce6-43b3b29cabc1	GET	/api/v1/course/get-courses	http://localhost:3000
 2024:02:16	21:09:14	a3f68e8b-d7b5-4944-add4-140d6fad0abc	GET	/api/v1/layout/get-layout/FAQ	http://localhost:3000
 2024:02:16	21:09:14	abc1dcc2-1f24-4814-9aba-01d546e52c3d	GET	/api/v1/refresh	http://localhost:3000
+2024:02:17	15:57:59	bf606ff3-97a4-4eb1-8165-95a205bf3b04	POST	/login	undefined
