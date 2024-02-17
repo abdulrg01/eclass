@@ -28,7 +28,7 @@ router.route("/update-user-role").patch(verifyJwt, controller.updateUserRole);
 
 router.route("/set-user-image").put(verifyJwt, controller.updateProfilePicture);
 
-router.route("/").get(verifyJwt, controller.all);
+router.route("/get-users").get(verifyJwt, controller.all);
 
 router.route("/delete-user/:id").delete(verifyJwt, controller.deleteUser);
 

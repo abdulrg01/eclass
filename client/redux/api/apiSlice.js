@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "https://eclassapi.onrender.com/",
+    baseUrl: "https://eclassapi.onrender.com",
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
@@ -26,7 +26,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
         console.log('sending refresh token')
 
         // send refresh token to get new access token 
-        const refreshResult = await baseQuery("/refresh", api, extraOptions)
+        const refreshResult = await baseQuery("users/refresh", api, extraOptions)
 
         if (refreshResult?.data) {
 

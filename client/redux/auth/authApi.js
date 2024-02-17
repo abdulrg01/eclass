@@ -5,14 +5,14 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     signup: builder.mutation({
       query: (credentials) => ({
-        url: "/registration",
+        url: "/users/registration",
         method: "POST",
         body: { ...credentials },
       }),
     }),
     activation: builder.mutation({
       query: ({ token, activationCode }) => ({
-        url: "/activate-user",
+        url: "/users/activate-user",
         method: "POST",
         body: {
           token,
@@ -22,21 +22,21 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     login: builder.mutation({
       query: (credentials) => ({
-        url: "/login",
+        url: "/users/login",
         method: "POST",
         body: { ...credentials },
       }),
     }),
     socialAuth: builder.mutation({
       query: (credentials) => ({
-        url: "/social-auth",
+        url: "/users/social-auth",
         method: "POST",
         body: { ...credentials },
       }),
     }),
     refresh: builder.mutation({
       query: () => ({
-        url: "/refresh",
+        url: "/users/refresh",
         method: "GET",
       }),
       async onQueryStarted(arg, { dispatch, queryFulfilled }) {
@@ -53,13 +53,13 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     getUserInfo: builder.mutation({
       query: () => ({
-        url: "/get-user-info",
+        url: "/users/get-user-info",
         method: "GET",
       }),
     }),
     sendLogout: builder.mutation({
       query: () => ({
-        url: "/logout",
+        url: "/users/logout",
         method: "POST",
       }),
       async onQueryStarted(arg, { dispatch, queryFulfilled }) {

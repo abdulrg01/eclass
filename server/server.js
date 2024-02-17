@@ -36,7 +36,7 @@ app.use(cookieParser());
 
 app.use("/", e.static(path.join(__dirname, "public")));
 app.use("/", require("./routes/root"));
-app.use("/api/v1", require("./routes/user"));
+app.use("/api/v1/users/", require("./routes/user"));
 app.use("/api/v1/course", require("./routes/course"));
 app.use("/api/v1/order", require("./routes/order"));
 app.use("/api/v1/notification", require("./routes/notification"));
