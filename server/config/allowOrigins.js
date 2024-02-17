@@ -1,5 +1,5 @@
 const allowOrigins = [
-    "http://localhost:3000"
+    "https://eclass-two.vercel.app"
 ];
 
 module.exports = allowOrigins;
