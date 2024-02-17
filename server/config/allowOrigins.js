@@ -1,5 +1,5 @@
 const allowOrigins = [
-    "https://eclass-git-main-abdulrg01.vercel.app"
+    "https://eclassapi.onrender.com"
 ];
 
 module.exports = allowOrigins;
